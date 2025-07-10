@@ -1,0 +1,23 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+.main-container {
+    border: 15px solid red;
+    border-radius: 20px 60px;
+    /* top, left-right, buttom */
+    /* border-radius: 60px 160px 60px;
+    border-radius: 50px 30px 70px 100px; */
+    padding: 30px;
+    cursor: move;
+
+}
+
+/* h1 {
+
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+
+} */

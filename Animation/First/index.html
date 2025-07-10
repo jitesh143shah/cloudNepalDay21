@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white flex items-center justify-center h-screen p-4">
+    <div class="flex gap-4">
+        <!-- Left Weather Card -->
+        <div class="bg-red-600 text-white p-6 rounded-xl w-64 shadow-lg">
+            <div class="flex justify-between items-center">
+                <h2 class="text-lg font-semibold">Today</h2>
+                <div class="flex gap-2">
+                    <img src="https://img.icons8.com/ios/24/ffffff/twitter--v1.png" />
+                    <img src="https://img.icons8.com/ios/24/ffffff/telegram-app.png" />
+                    <img src="https://img.icons8.com/ios/24/ffffff/facebook--v1.png" />
+                    <img src="https://img.icons8.com/ios/24/ffffff/whatsapp--v1.png" />
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <h1 class="text-5xl font-bold">23<sup>°</sup></h1>
+                <p class="mt-2">Mostly Cloudy</p>
+            </div>
+        </div>
+
+        <!-- Wind Info -->
+        <div class="bg-red-100 text-red-800 p-6 rounded-xl w-28 text-center shadow-lg">
+            <p class="text-xs uppercase font-semibold">Wind Speed</p>
+            <h2 class="text-3xl font-bold mt-2">05<sup>°</sup></h2>
+        </div>
+
+        <!-- Humidity Info -->
+        <div class="bg-red-100 text-red-800 p-6 rounded-xl w-28 text-center shadow-lg">
+            <p class="text-xs uppercase font-semibold">Humidity</p>
+            <h2 class="text-3xl font-bold mt-2">10<sup>°</sup></h2>
+        </div>
+    </div>
+</body>
+
+</html>

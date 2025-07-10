@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="hello"></div>
+    <!-- This is for DOM document Object Model -->
+    <h1 class="classname"></h1>
+    <h2 class="classname"></h2>
+    <h2 class="classname"></h2>
+    <h2 class="classname"></h2>
+    <a href="" id="myLink"></a>
+    <!-- For Event like onCLick OnMouse -->
+
+    <button id="onCLick"> Click me </button>
+    <p id="message"></p>
+    <script>
+        // document.getElementsByClassName("classname")[0].innerHTML = "hello1";
+        // document.getElementsByClassName("classname")[2].innerHTML = "hello2";
+        // document.getElementsByClassName("classname")[1].innerHTML = "hello3";
+        // document.getElementById("hello").innerHTML = "<H1>Hello</h1>";
+        // const data = document.getElementById("myLink");
+        // data.innerHTML = "Hello";
+        // data.href = "https://www.google.com/";
+        // data.target = "_blank";
+        // data.style.color = "red";
+        // data.style.fontSize = "40px";
+        // data.style.fontStyle = "italic"
+
+        // Object.assign(document.getElementById("myLink"), {
+        //     text: "First try",
+        //     href: "https://www.google.com",
+        //     target: "_blank",
+        //     style: "color:red;text-decoration:underline",
+        // })
+        const message = document.getElementById("message");
+        const onCLick = document.getElementById("onCLick");
+        onCLick.addEventListener("click", function () {
+            message.textContent = "Button Click"
+        })
+        onCLick.addEventListener("mouseout", function () {
+            message.textContent = "";
+        })
+        onCLick.addEventListener("dblclick", function () {
+            message.textContent = "You have doubble Clicked"
+        })
+        onCLick.addEventListener("mouseover", function () {
+            message.textContent = "Mouse Hover here"
+        })
+        onCLick.addEventListener("drag", function () {
+            message.textContent = "You have draged here"
+        })
+        // onCLick.addEventListener("click", function () {
+        //     message.innerHTML = "<font style={red;}>Hello mister</font>"
+        // })
+        document.write("i am written here")
+    </script>
+</body>
+
+</html>

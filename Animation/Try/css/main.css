@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* .demo {
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px 2px;
+    font-size: 32px;
+    color: red;
+    background: rgb(93, 141, 141);
+
+
+} */
+
+/* .demo {
+    margin: 50px 50px;
+
+    animation-duration: 3s;
+    animation-name: slide-in;
+}
+
+
+@keyframes slide-in {
+
+} */
+
+@keyframes example {
+
+    0%,
+    100% {
+        background-color: red;
+        animation-iteration-count: infinite;
+
+    }
+
+    50% {
+
+
+        background-color: yellow;
+
+    }
+}
+
+/* The element to apply the animation to */
+.demo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 5s linear 0.2s infinite alternate;
+    animation-duration: 4s;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.demo:hover {
+    background-color: black;
+    animation-name: demo-hover;
+
+}
+
+@keyframes demo-hover {
+
+    0%,
+    100% {
+        font-size: 30px;
+        color: blue;
+        position: absolute;
+        margin-top: 50px;
+        background-color: rgb(42, 30, 30);
+
+    }
+
+    50% {
+        background-color: cyan;
+
+
+    }
+
+}

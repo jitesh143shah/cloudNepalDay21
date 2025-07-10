@@ -1,0 +1,28 @@
+table {
+
+    align-items: center;
+    border: 3px solid rgb(86, 48, 48);
+    border-collapse: collapse;
+}
+
+.main-container {
+    margin: 0px 0px 20px 0px;
+}
+
+/*
+tr {
+    border: 3px solid rgb(191, 103, 103);
+} */
+
+th,
+td {
+    border: 2px solid rgb(191, 103, 103);
+    padding: 10px 15px;
+    text-align: center;
+
+}
+
+/*
+body {
+    overflow: hidden;
+} */
