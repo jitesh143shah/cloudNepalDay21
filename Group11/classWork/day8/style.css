@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html {
+    font-size: 40px;
+} */
+
+
+.container {
+    /* width of the  screen
+    px, in,cm, mm is an absolute unit which means does
+     not depend on the screen it will change while
+    vw,vh,%,rem,em is parent unit which means depend with the resolution of the screen*/
+    background-color: cyan;
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 15px 10px;
+    margin: auto;
+    font-size: 20px;
+
+
+}
+
+p {
+
+    /* Rem means it will access the actual size of the root
+    (rem means root default size 16px;
+    em means it access the actual size of the parent clsss
+    em means parent size which defines the in the above  */
+    font-size: 1rem;
+    font-size: 0.5rem;
+    font-size: 1em;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.innner-container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* flex-direction: row colunm row-reverse */
+    flex-direction: row;
+    /* ffle-direction:row and colunm depends on both justify-content and align-item */
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(160, 105, 211);
+    border: 1px solid black;
+    height: 100px;
+    width: 150px;
+    color: wheat;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: sans-serif;
+}

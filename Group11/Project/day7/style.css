@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../../../assets/hills.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+}
+
+/* Resuable class defined here */
+.btn {
+    padding: 20px 35px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    transition: all 0.2s ease-in;
+    background-image: linear-gradient(to right, rgb(145, 141, 141), rgb(230, 162, 162));
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgb(250, 181, 181), rgb(138, 135, 135));
+    background-color: rgba(0, 0, 0, 0.144);
+    color: white;
+
+
+}
+
+/* Resuable class defined here */
+.black-transparent {}
+
+.login-Page-Outer-Container {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.black-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 30vw;
+    background-color: rgba(240, 248, 255, 0.24);
+    gap: 10px;
+    padding: 20px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 30px;
+
+}
+
+.login-Section {
+    width: 100%;
+}
+
+
+.login-Section h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.input-outer-container {
+    width: 100%;
+}
+
+.login-Section .user-input-field {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    /* width: 100%; */
+    border: 1px solid rgba(182, 127, 127, 0.418);
+    border-radius: 10px;
+    /* padding: 15px 0px 15px 15px; */
+    padding: 10px 0 10px 15px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.login-Section .user-input-field:focus {
+    color: green;
+}
+
+.login-Section .user-input-field:focus::placeholder {
+    color: red;
+}
+
+.login-Section .remember-me-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.remember-me-forget label {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+}
