@@ -8,7 +8,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 20px;
+
 }
+
+/* ----------Error page css start here-------------- */
+.error-container {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.h1 {
+    font-size: 50px;
+}
+
+/* ----------Error page css start here-------------- */
+
 
 /* Resuable class defined here */
 .btn {
@@ -74,10 +90,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     outline: none;
-    /* width: 100%; */
+    width: 100%;
     border: 1px solid rgba(182, 127, 127, 0.418);
     border-radius: 10px;
-    /* padding: 15px 0px 15px 15px; */
+    padding: 15px 0px 15px 15px;
     padding: 10px 0 10px 15px;
     font-size: 18px;
     margin-top: 40px;
