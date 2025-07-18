@@ -36,7 +36,22 @@ if (currentPage === "userDetails") {
         fetch(`${API_BASE_URL}/${userId}`)
             .then((response) => response.json())
             .then((user) => {
-                console.log(user)
+                console.log(user);
+                const cardDetails = document.createElement("div");
+                cardDetails.innerHTML = `
+                    <p><strong>ID:</strong>${user.id}</p>
+                     <p><strong>Name:</strong>${user.name}</p>
+                      <p><strong>Username:</strong>${user.username}</p>
+                       <p><strong>Email:</strong>${user.email}</p>
+                        <p><strong>Phone:</strong>${user.phone}</p>
+                         <p><strong>Website:</strong>${user.website}</p>
+                          <p><strong>Company:</strong>${user.company.name}</p>
+                           <p><strong>Address:</strong>${user.address.street}.${user.address.suite}.${user.address.city}</p>
+                        `
+                userIdContainer.appendChild(cardDetails)
+            })
+            .catch((error) => {
+                userIdContainer.textContent = "Not valid user ID";
             })
     } else {
         userIdContainer.textContent = "User not found";

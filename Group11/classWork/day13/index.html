@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 100px;
+            animation: example;
+            /* 2s timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes example {
+            from {
+                color: white;
+            }
+
+            to {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>hello</h1>
+    </div>
+</body>
+
+</html>
