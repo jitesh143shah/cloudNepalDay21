@@ -1,0 +1,17 @@
+@import url('httpsnpm ://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+
+@theme {
+  --color-primary: #804605;
+  --color-secondary: ##000001;
+  --color-primary-two: #c48a22;
+  --font-openSans: "Open Sans", sans-serif;
+}

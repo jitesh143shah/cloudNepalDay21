@@ -1,0 +1,11 @@
+export { default as logo } from "./assets/logo.png";
+export { default as bannerImg } from "./assets/banner.png";
+export { default as bannerImg2 } from "./assets/banner2.png";
+export { default as dumbell } from "./assets/dumbell.jpg";
+export { default as hero } from "./assets/hero.jpg";
+export { default as pushups } from "./assets/pushups.png";
+export { default as react } from "./assets/react.svg";
+export { default as app_store } from "./assets/website/app_store.png";
+export { default as appleicon } from "./assets/website/appleicon.png";
+export { default as play_store } from "./assets/website/play_store.png";
+export { default as playstoreicon } from "./assets/website/playstoreicon.png";
