@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sttyle.css" />
+  </head>
+  <body>
+    <div>
+      <!-- <h1 id="idname">Hello</h1>
+      <h1 id="idname1">Hello</h1> -->
+      <span class="classname"></span>
+      <p></p>
+      <a id="myLink"></a><br />
+      <button id="clickme">Click me</button>
+      <p id="message"></p>
+    </div>
+
+    <script>
+      //   document.getElementById("idname").textContent += "Welcome";
+      //   document.getElementById("idname1").textContent = "Welcome";
+      //   let a = document.getElementsByClassName("classname")[0];
+      //   a.textContent = "hello";
+      //   let para = document.getElementsByTagName("p")[0];
+      //   para.textContent = "Hello , I am a paragraph";
+      //   document.write("hello, i am jites");
+      //   para.innerHTML = "<h1>biswas </h1>";
+      //   para.innerText += " hello sec";
+      const data = document.getElementById("myLink");
+      data.innerHTML = "Link";
+      data.href = "https:/www.google.com";
+      data.target = "_blank";
+      data.style.color = "red";
+      data.style.fontSize = "40px";
+      data.style.fontStyle = "italic";
+      data.addEventListener("mouseover", function () {
+        data.style.color = "blue";
+      });
+      data.addEventListener("mouseout", function () {
+        data.style.color = "red";
+      });
+      const clickmebtn = document.getElementById("clickme");
+      const message = document.getElementById("message");
+      clickmebtn.addEventListener("click", () => {
+        message.textContent = "click";
+      });
+      clickmebtn.addEventListener("mouseover", () => {
+        message.textContent = "hover me";
+      });
+      clickmebtn.addEventListener("mouseout", () => {
+        message.textContent = "mouse out";
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

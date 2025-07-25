@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.nav-container {
+  position: relative;
+  background-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0, 90) 0%,
+    rgba(255, 0, 0, 0.664) 40%,
+    rgb(255, 0, 221) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-right: 100px;
+}
+#logo {
+  background-color: black;
+  padding: 5px;
+  border: 3px white solid;
+  border-radius: 50%;
+  font-size: 50px;
+  box-shadow: 0 0 10px rgb(77, 255, 77), 0 0 10px rgb(20, 102, 20),
+    0 0 10px rgb(0, 255, 0);
+}
+#logo > img {
+  padding: 10px 15px;
+  height: 40px;
+  width: 40px;
+}
+ul {
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  font-size: 25px;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: rgb(252, 163, 163);
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px;
+  background: #000;
+  min-width: 168px;
+  display: none;
+  z-index: 99;
+  border-radius: 5px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.dropdown-menu li a:hover {
+  background: #444;
+  font-weight: 400;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#menubar {
+  display: none;
+}
+@media screen and (max-width: 628px) {
+  .nav-container {
+    padding-right: 50px;
+  }
+  #logo > img {
+    padding: 10px 15px;
+    height: 20px;
+    width: 20px;
+  }
+  #menu {
+    display: none;
+  }
+  #menubar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+  }
+  #menubar div {
+    background-color: white;
+    height: 10px;
+    width: 60px;
+  }
+  #menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    background-image: linear-gradient(
+      to left,
+      rgb(0, 0, 0, 90) 0%,
+      rgba(255, 0, 0, 0.664) 40%,
+      rgb(255, 0, 221) 100%
+    );
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    gap: 22px;
+  }
+  .dropdown-menu {
+    top: 0px;
+    right: 0;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.footer-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.footer-container span {
+  font-style: italic;
+}
